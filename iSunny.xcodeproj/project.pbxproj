@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5140F17D29B76681003B2A97 /* iSunnyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F17C29B76681003B2A97 /* iSunnyApp.swift */; };
-		5140F17F29B76681003B2A97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F17E29B76681003B2A97 /* ContentView.swift */; };
 		5140F18129B76683003B2A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5140F18029B76683003B2A97 /* Assets.xcassets */; };
 		5140F18529B76683003B2A97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5140F18429B76683003B2A97 /* Preview Assets.xcassets */; };
 		5140F18F29B76683003B2A97 /* iSunnyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F18E29B76683003B2A97 /* iSunnyTests.swift */; };
 		5140F19929B76683003B2A97 /* iSunnyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F19829B76683003B2A97 /* iSunnyUITests.swift */; };
 		5140F19B29B76683003B2A97 /* iSunnyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F19A29B76683003B2A97 /* iSunnyUITestsLaunchTests.swift */; };
+		5140F1A829B76897003B2A97 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F1A729B76897003B2A97 /* MainView.swift */; };
+		519616E629B786AE001FC728 /* SearchCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616E529B786AE001FC728 /* SearchCityView.swift */; };
+		519616E829B7AB14001FC728 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616E729B7AB14001FC728 /* LocationManager.swift */; };
+		519616EA29B7B0B0001FC728 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616E929B7B0B0001FC728 /* CityModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		5140F17929B76681003B2A97 /* iSunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSunny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5140F17C29B76681003B2A97 /* iSunnyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSunnyApp.swift; sourceTree = "<group>"; };
-		5140F17E29B76681003B2A97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5140F18029B76683003B2A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5140F18229B76683003B2A97 /* iSunny.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iSunny.entitlements; sourceTree = "<group>"; };
 		5140F18429B76683003B2A97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +47,10 @@
 		5140F19429B76683003B2A97 /* iSunnyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSunnyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5140F19829B76683003B2A97 /* iSunnyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSunnyUITests.swift; sourceTree = "<group>"; };
 		5140F19A29B76683003B2A97 /* iSunnyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSunnyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5140F1A729B76897003B2A97 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		519616E529B786AE001FC728 /* SearchCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityView.swift; sourceTree = "<group>"; };
+		519616E729B7AB14001FC728 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		519616E929B7B0B0001FC728 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				5140F17C29B76681003B2A97 /* iSunnyApp.swift */,
-				5140F17E29B76681003B2A97 /* ContentView.swift */,
+				5140F1A729B76897003B2A97 /* MainView.swift */,
+				519616E529B786AE001FC728 /* SearchCityView.swift */,
+				519616E729B7AB14001FC728 /* LocationManager.swift */,
+				519616E929B7B0B0001FC728 /* CityModel.swift */,
 				5140F18029B76683003B2A97 /* Assets.xcassets */,
 				5140F18229B76683003B2A97 /* iSunny.entitlements */,
 				5140F18329B76683003B2A97 /* Preview Content */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5140F17F29B76681003B2A97 /* ContentView.swift in Sources */,
+				5140F1A829B76897003B2A97 /* MainView.swift in Sources */,
+				519616E629B786AE001FC728 /* SearchCityView.swift in Sources */,
+				519616EA29B7B0B0001FC728 /* CityModel.swift in Sources */,
+				519616E829B7AB14001FC728 /* LocationManager.swift in Sources */,
 				5140F17D29B76681003B2A97 /* iSunnyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
