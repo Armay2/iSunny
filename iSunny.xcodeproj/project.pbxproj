@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5140F17D29B76681003B2A97 /* iSunnyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F17C29B76681003B2A97 /* iSunnyApp.swift */; };
+		5140F17F29B76681003B2A97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F17E29B76681003B2A97 /* ContentView.swift */; };
+		5140F18129B76683003B2A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5140F18029B76683003B2A97 /* Assets.xcassets */; };
+		5140F18529B76683003B2A97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5140F18429B76683003B2A97 /* Preview Assets.xcassets */; };
+		5140F18F29B76683003B2A97 /* iSunnyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F18E29B76683003B2A97 /* iSunnyTests.swift */; };
+		5140F19929B76683003B2A97 /* iSunnyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F19829B76683003B2A97 /* iSunnyUITests.swift */; };
+		5140F19B29B76683003B2A97 /* iSunnyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F19A29B76683003B2A97 /* iSunnyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5140F18B29B76683003B2A97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5140F17129B76681003B2A97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5140F17829B76681003B2A97;
+			remoteInfo = iSunny;
+		};
+		5140F19529B76683003B2A97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5140F17129B76681003B2A97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5140F17829B76681003B2A97;
+			remoteInfo = iSunny;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5140F17929B76681003B2A97 /* iSunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSunny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5140F17C29B76681003B2A97 /* iSunnyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSunnyApp.swift; sourceTree = "<group>"; };
+		5140F17E29B76681003B2A97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5140F18029B76683003B2A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5140F18229B76683003B2A97 /* iSunny.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iSunny.entitlements; sourceTree = "<group>"; };
+		5140F18429B76683003B2A97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5140F18A29B76683003B2A97 /* iSunnyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSunnyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5140F18E29B76683003B2A97 /* iSunnyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSunnyTests.swift; sourceTree = "<group>"; };
+		5140F19429B76683003B2A97 /* iSunnyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSunnyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5140F19829B76683003B2A97 /* iSunnyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSunnyUITests.swift; sourceTree = "<group>"; };
+		5140F19A29B76683003B2A97 /* iSunnyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSunnyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5140F17629B76681003B2A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5140F18729B76683003B2A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5140F19129B76683003B2A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5140F17029B76681003B2A97 = {
+			isa = PBXGroup;
+			children = (
+				5140F17B29B76681003B2A97 /* iSunny */,
+				5140F18D29B76683003B2A97 /* iSunnyTests */,
+				5140F19729B76683003B2A97 /* iSunnyUITests */,
+				5140F17A29B76681003B2A97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5140F17A29B76681003B2A97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5140F17929B76681003B2A97 /* iSunny.app */,
+				5140F18A29B76683003B2A97 /* iSunnyTests.xctest */,
+				5140F19429B76683003B2A97 /* iSunnyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5140F17B29B76681003B2A97 /* iSunny */ = {
+			isa = PBXGroup;
+			children = (
+				5140F17C29B76681003B2A97 /* iSunnyApp.swift */,
+				5140F17E29B76681003B2A97 /* ContentView.swift */,
+				5140F18029B76683003B2A97 /* Assets.xcassets */,
+				5140F18229B76683003B2A97 /* iSunny.entitlements */,
+				5140F18329B76683003B2A97 /* Preview Content */,
+			);
+			path = iSunny;
+			sourceTree = "<group>";
+		};
+		5140F18329B76683003B2A97 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5140F18429B76683003B2A97 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5140F18D29B76683003B2A97 /* iSunnyTests */ = {
+			isa = PBXGroup;
+			children = (
+				5140F18E29B76683003B2A97 /* iSunnyTests.swift */,
+			);
+			path = iSunnyTests;
+			sourceTree = "<group>";
+		};
+		5140F19729B76683003B2A97 /* iSunnyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5140F19829B76683003B2A97 /* iSunnyUITests.swift */,
+				5140F19A29B76683003B2A97 /* iSunnyUITestsLaunchTests.swift */,
+			);
+			path = iSunnyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5140F17829B76681003B2A97 /* iSunny */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5140F19E29B76683003B2A97 /* Build configuration list for PBXNativeTarget "iSunny" */;
+			buildPhases = (
+				5140F17529B76681003B2A97 /* Sources */,
+				5140F17629B76681003B2A97 /* Frameworks */,
+				5140F17729B76681003B2A97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSunny;
+			productName = iSunny;
+			productReference = 5140F17929B76681003B2A97 /* iSunny.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5140F18929B76683003B2A97 /* iSunnyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5140F1A129B76683003B2A97 /* Build configuration list for PBXNativeTarget "iSunnyTests" */;
+			buildPhases = (
+				5140F18629B76683003B2A97 /* Sources */,
+				5140F18729B76683003B2A97 /* Frameworks */,
+				5140F18829B76683003B2A97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5140F18C29B76683003B2A97 /* PBXTargetDependency */,
+			);
+			name = iSunnyTests;
+			productName = iSunnyTests;
+			productReference = 5140F18A29B76683003B2A97 /* iSunnyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5140F19329B76683003B2A97 /* iSunnyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5140F1A429B76683003B2A97 /* Build configuration list for PBXNativeTarget "iSunnyUITests" */;
+			buildPhases = (
+				5140F19029B76683003B2A97 /* Sources */,
+				5140F19129B76683003B2A97 /* Frameworks */,
+				5140F19229B76683003B2A97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5140F19629B76683003B2A97 /* PBXTargetDependency */,
+			);
+			name = iSunnyUITests;
+			productName = iSunnyUITests;
+			productReference = 5140F19429B76683003B2A97 /* iSunnyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5140F17129B76681003B2A97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					5140F17829B76681003B2A97 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					5140F18929B76683003B2A97 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5140F17829B76681003B2A97;
+					};
+					5140F19329B76683003B2A97 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5140F17829B76681003B2A97;
+					};
+				};
+			};
+			buildConfigurationList = 5140F17429B76681003B2A97 /* Build configuration list for PBXProject "iSunny" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5140F17029B76681003B2A97;
+			productRefGroup = 5140F17A29B76681003B2A97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5140F17829B76681003B2A97 /* iSunny */,
+				5140F18929B76683003B2A97 /* iSunnyTests */,
+				5140F19329B76683003B2A97 /* iSunnyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5140F17729B76681003B2A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5140F18529B76683003B2A97 /* Preview Assets.xcassets in Resources */,
+				5140F18129B76683003B2A97 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5140F18829B76683003B2A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5140F19229B76683003B2A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5140F17529B76681003B2A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5140F17F29B76681003B2A97 /* ContentView.swift in Sources */,
+				5140F17D29B76681003B2A97 /* iSunnyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5140F18629B76683003B2A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5140F18F29B76683003B2A97 /* iSunnyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5140F19029B76683003B2A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5140F19B29B76683003B2A97 /* iSunnyUITestsLaunchTests.swift in Sources */,
+				5140F19929B76683003B2A97 /* iSunnyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5140F18C29B76683003B2A97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5140F17829B76681003B2A97 /* iSunny */;
+			targetProxy = 5140F18B29B76683003B2A97 /* PBXContainerItemProxy */;
+		};
+		5140F19629B76683003B2A97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5140F17829B76681003B2A97 /* iSunny */;
+			targetProxy = 5140F19529B76683003B2A97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5140F19C29B76683003B2A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5140F19D29B76683003B2A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5140F19F29B76683003B2A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iSunny/iSunny.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iSunny/Preview Content\"";
+				DEVELOPMENT_TEAM = 297AHX4JHU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = armay.iSunny;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5140F1A029B76683003B2A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iSunny/iSunny.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iSunny/Preview Content\"";
+				DEVELOPMENT_TEAM = 297AHX4JHU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = armay.iSunny;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5140F1A229B76683003B2A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 297AHX4JHU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = armay.iSunnyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSunny.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iSunny";
+			};
+			name = Debug;
+		};
+		5140F1A329B76683003B2A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 297AHX4JHU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = armay.iSunnyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSunny.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iSunny";
+			};
+			name = Release;
+		};
+		5140F1A529B76683003B2A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 297AHX4JHU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = armay.iSunnyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iSunny;
+			};
+			name = Debug;
+		};
+		5140F1A629B76683003B2A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 297AHX4JHU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = armay.iSunnyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iSunny;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5140F17429B76681003B2A97 /* Build configuration list for PBXProject "iSunny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5140F19C29B76683003B2A97 /* Debug */,
+				5140F19D29B76683003B2A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5140F19E29B76683003B2A97 /* Build configuration list for PBXNativeTarget "iSunny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5140F19F29B76683003B2A97 /* Debug */,
+				5140F1A029B76683003B2A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5140F1A129B76683003B2A97 /* Build configuration list for PBXNativeTarget "iSunnyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5140F1A229B76683003B2A97 /* Debug */,
+				5140F1A329B76683003B2A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5140F1A429B76683003B2A97 /* Build configuration list for PBXNativeTarget "iSunnyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5140F1A529B76683003B2A97 /* Debug */,
+				5140F1A629B76683003B2A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5140F17129B76681003B2A97 /* Project object */;
+}
