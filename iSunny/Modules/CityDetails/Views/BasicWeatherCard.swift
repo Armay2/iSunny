@@ -15,7 +15,7 @@ struct BasicWeatherCard: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Label(title, systemImage: "thermometer.medium").font(.headline)
+            Label(title, systemImage: icon).font(.headline)
             Text(value).font(.title).bold()
             Spacer()
             Text(label)

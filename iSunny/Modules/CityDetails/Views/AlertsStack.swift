@@ -1,5 +1,5 @@
 //
-//  AlertCard.swift
+//  AlertsStack.swift
 //  iSunny
 //
 //  Created by Arnaud NOMMAY on 09/03/2023.
@@ -25,14 +25,11 @@ struct AlertsStack: View {
                 )
             }
         }
-
-        
-        
     }
 }
 
-struct AlertCard_Previews: PreviewProvider {
+struct AlertsStack_Previews: PreviewProvider {
     static var previews: some View {
-        AlertCard(alert: )
+        AlertsStack(alerts: [Alert.default])
     }
 }

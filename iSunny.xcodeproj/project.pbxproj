@@ -194,9 +194,9 @@
 			isa = PBXGroup;
 			children = (
 				519616EE29B8DEFC001FC728 /* CityDetailsView.swift */,
-				5196170C29BA3CFC001FC728 /* PressureCard.swift */,
 				5196170429BA20F1001FC728 /* AlertsStack.swift */,
 				5196170629BA21BF001FC728 /* HourlyCard.swift */,
+				5196170C29BA3CFC001FC728 /* PressureCard.swift */,
 				5196170A29BA378F001FC728 /* BasicWeatherCard.swift */,
 			);
 			path = Views;
