@@ -24,7 +24,7 @@
 		519616F729BA1EC6001FC728 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616F629BA1EC6001FC728 /* NetworkManager.swift */; };
 		519616F929BA1EDD001FC728 /* NetworkManagerKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616F829BA1EDD001FC728 /* NetworkManagerKey.swift */; };
 		519616FB29BA1EF9001FC728 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616FA29BA1EF9001FC728 /* HTTPMethod.swift */; };
-		5196170529BA20F1001FC728 /* AlertCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196170429BA20F1001FC728 /* AlertCard.swift */; };
+		5196170529BA20F1001FC728 /* AlertsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196170429BA20F1001FC728 /* AlertsStack.swift */; };
 		5196170729BA21BF001FC728 /* HourlyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196170629BA21BF001FC728 /* HourlyCard.swift */; };
 		5196170929BA279D001FC728 /* WeatherCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196170829BA279D001FC728 /* WeatherCode.swift */; };
 		5196170B29BA378F001FC728 /* BasicWeatherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196170A29BA378F001FC728 /* BasicWeatherCard.swift */; };
@@ -71,7 +71,7 @@
 		519616F629BA1EC6001FC728 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		519616F829BA1EDD001FC728 /* NetworkManagerKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerKey.swift; sourceTree = "<group>"; };
 		519616FA29BA1EF9001FC728 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		5196170429BA20F1001FC728 /* AlertCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCard.swift; sourceTree = "<group>"; };
+		5196170429BA20F1001FC728 /* AlertsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsStack.swift; sourceTree = "<group>"; };
 		5196170629BA21BF001FC728 /* HourlyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCard.swift; sourceTree = "<group>"; };
 		5196170829BA279D001FC728 /* WeatherCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCode.swift; sourceTree = "<group>"; };
 		5196170A29BA378F001FC728 /* BasicWeatherCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicWeatherCard.swift; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 			children = (
 				519616EE29B8DEFC001FC728 /* CityDetailsView.swift */,
 				5196170C29BA3CFC001FC728 /* PressureCard.swift */,
-				5196170429BA20F1001FC728 /* AlertCard.swift */,
+				5196170429BA20F1001FC728 /* AlertsStack.swift */,
 				5196170629BA21BF001FC728 /* HourlyCard.swift */,
 				5196170A29BA378F001FC728 /* BasicWeatherCard.swift */,
 			);
@@ -381,7 +381,7 @@
 				5196170729BA21BF001FC728 /* HourlyCard.swift in Sources */,
 				519616F929BA1EDD001FC728 /* NetworkManagerKey.swift in Sources */,
 				519616EF29B8DEFC001FC728 /* CityDetailsView.swift in Sources */,
-				5196170529BA20F1001FC728 /* AlertCard.swift in Sources */,
+				5196170529BA20F1001FC728 /* AlertsStack.swift in Sources */,
 				519616F529BA1E8E001FC728 /* Endpoint.swift in Sources */,
 				519616F729BA1EC6001FC728 /* NetworkManager.swift in Sources */,
 				5140F1A829B76897003B2A97 /* CitiesView.swift in Sources */,

@@ -32,10 +32,8 @@ struct CityDetailsView: View {
                     Text(String(format: "L:%.0f °C", weather?.daily?[0].temp?.min?.rounded(.toNearestOrAwayFromZero) ?? 42.42))
                 }
                 
-                ForEach(weather?.alerts ?? [], id: \.self) { alert in
-                    AlertCard(alert: alert)
-                        .redacted(reason: weather?.alerts == nil ? .placeholder : [])
-                }
+                AlertsStack(alert: alert)
+                    .redacted(reason: weather?.alerts == nil ? .placeholder : [])
                 
                 HourlyCard(hourlyForcast: weather?.hourly ?? [])
                     .redacted(reason: weather?.hourly == nil ? .placeholder : [])
