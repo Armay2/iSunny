@@ -13,10 +13,17 @@
 		5140F18F29B76683003B2A97 /* iSunnyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F18E29B76683003B2A97 /* iSunnyTests.swift */; };
 		5140F19929B76683003B2A97 /* iSunnyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F19829B76683003B2A97 /* iSunnyUITests.swift */; };
 		5140F19B29B76683003B2A97 /* iSunnyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F19A29B76683003B2A97 /* iSunnyUITestsLaunchTests.swift */; };
-		5140F1A829B76897003B2A97 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F1A729B76897003B2A97 /* MainView.swift */; };
+		5140F1A829B76897003B2A97 /* CitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5140F1A729B76897003B2A97 /* CitiesView.swift */; };
 		519616E629B786AE001FC728 /* SearchCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616E529B786AE001FC728 /* SearchCityView.swift */; };
 		519616E829B7AB14001FC728 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616E729B7AB14001FC728 /* LocationManager.swift */; };
 		519616EA29B7B0B0001FC728 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616E929B7B0B0001FC728 /* CityModel.swift */; };
+		519616ED29B8CFA1001FC728 /* WaetherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616EC29B8CFA1001FC728 /* WaetherModel.swift */; };
+		519616EF29B8DEFC001FC728 /* CityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616EE29B8DEFC001FC728 /* CityDetailView.swift */; };
+		519616F329BA1E59001FC728 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616F229BA1E59001FC728 /* AppEnvironment.swift */; };
+		519616F529BA1E8E001FC728 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616F429BA1E8E001FC728 /* Endpoint.swift */; };
+		519616F729BA1EC6001FC728 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616F629BA1EC6001FC728 /* NetworkManager.swift */; };
+		519616F929BA1EDD001FC728 /* NetworkManagerKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616F829BA1EDD001FC728 /* NetworkManagerKey.swift */; };
+		519616FB29BA1EF9001FC728 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519616FA29BA1EF9001FC728 /* HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +54,18 @@
 		5140F19429B76683003B2A97 /* iSunnyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSunnyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5140F19829B76683003B2A97 /* iSunnyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSunnyUITests.swift; sourceTree = "<group>"; };
 		5140F19A29B76683003B2A97 /* iSunnyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSunnyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5140F1A729B76897003B2A97 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5140F1A729B76897003B2A97 /* CitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesView.swift; sourceTree = "<group>"; };
 		519616E529B786AE001FC728 /* SearchCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityView.swift; sourceTree = "<group>"; };
 		519616E729B7AB14001FC728 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		519616E929B7B0B0001FC728 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		519616EB29B8CE17001FC728 /* FakeData.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = FakeData.geojson; sourceTree = "<group>"; };
+		519616EC29B8CFA1001FC728 /* WaetherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaetherModel.swift; sourceTree = "<group>"; };
+		519616EE29B8DEFC001FC728 /* CityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailView.swift; sourceTree = "<group>"; };
+		519616F229BA1E59001FC728 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		519616F429BA1E8E001FC728 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		519616F629BA1EC6001FC728 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		519616F829BA1EDD001FC728 /* NetworkManagerKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerKey.swift; sourceTree = "<group>"; };
+		519616FA29BA1EF9001FC728 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +116,16 @@
 		5140F17B29B76681003B2A97 /* iSunny */ = {
 			isa = PBXGroup;
 			children = (
+				519616F129BA1E40001FC728 /* Environment */,
+				519616F029B8F6B7001FC728 /* Network */,
 				5140F17C29B76681003B2A97 /* iSunnyApp.swift */,
-				5140F1A729B76897003B2A97 /* MainView.swift */,
+				5140F1A729B76897003B2A97 /* CitiesView.swift */,
+				519616EE29B8DEFC001FC728 /* CityDetailView.swift */,
 				519616E529B786AE001FC728 /* SearchCityView.swift */,
 				519616E729B7AB14001FC728 /* LocationManager.swift */,
 				519616E929B7B0B0001FC728 /* CityModel.swift */,
+				519616EC29B8CFA1001FC728 /* WaetherModel.swift */,
+				519616EB29B8CE17001FC728 /* FakeData.geojson */,
 				5140F18029B76683003B2A97 /* Assets.xcassets */,
 				5140F18229B76683003B2A97 /* iSunny.entitlements */,
 				5140F18329B76683003B2A97 /* Preview Content */,
@@ -136,6 +156,25 @@
 				5140F19A29B76683003B2A97 /* iSunnyUITestsLaunchTests.swift */,
 			);
 			path = iSunnyUITests;
+			sourceTree = "<group>";
+		};
+		519616F029B8F6B7001FC728 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				519616F429BA1E8E001FC728 /* Endpoint.swift */,
+				519616F629BA1EC6001FC728 /* NetworkManager.swift */,
+				519616F829BA1EDD001FC728 /* NetworkManagerKey.swift */,
+				519616FA29BA1EF9001FC728 /* HTTPMethod.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		519616F129BA1E40001FC728 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				519616F229BA1E59001FC728 /* AppEnvironment.swift */,
+			);
+			path = Environment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +307,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5140F1A829B76897003B2A97 /* MainView.swift in Sources */,
+				519616F929BA1EDD001FC728 /* NetworkManagerKey.swift in Sources */,
+				519616EF29B8DEFC001FC728 /* CityDetailView.swift in Sources */,
+				519616F529BA1E8E001FC728 /* Endpoint.swift in Sources */,
+				519616F729BA1EC6001FC728 /* NetworkManager.swift in Sources */,
+				5140F1A829B76897003B2A97 /* CitiesView.swift in Sources */,
 				519616E629B786AE001FC728 /* SearchCityView.swift in Sources */,
+				519616ED29B8CFA1001FC728 /* WaetherModel.swift in Sources */,
 				519616EA29B7B0B0001FC728 /* CityModel.swift in Sources */,
+				519616FB29BA1EF9001FC728 /* HTTPMethod.swift in Sources */,
+				519616F329BA1E59001FC728 /* AppEnvironment.swift in Sources */,
 				519616E829B7AB14001FC728 /* LocationManager.swift in Sources */,
 				5140F17D29B76681003B2A97 /* iSunnyApp.swift in Sources */,
 			);

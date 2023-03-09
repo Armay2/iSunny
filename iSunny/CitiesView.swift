@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct CitiesView: View {
     @State private var cities = City.exemples
     @State private var isPresentedAddCityView = false
     
@@ -47,6 +47,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        CitiesView()
     }
 }
