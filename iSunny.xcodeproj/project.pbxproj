@@ -31,6 +31,7 @@
 		5196170D29BA3CFC001FC728 /* PressureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196170C29BA3CFC001FC728 /* PressureCard.swift */; };
 		5196170F29BA84F8001FC728 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196170E29BA84F8001FC728 /* NetworkManagerTests.swift */; };
 		5196171129BA8674001FC728 /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196171029BA8674001FC728 /* LocationManagerTests.swift */; };
+		51BA0C6529BA9AAF00E6A6E3 /* UVIndexCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA0C6429BA9AAF00E6A6E3 /* UVIndexCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		5196170C29BA3CFC001FC728 /* PressureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureCard.swift; sourceTree = "<group>"; };
 		5196170E29BA84F8001FC728 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		5196171029BA8674001FC728 /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
+		51BA0C6429BA9AAF00E6A6E3 /* UVIndexCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVIndexCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				5196170629BA21BF001FC728 /* HourlyCard.swift */,
 				5196170C29BA3CFC001FC728 /* PressureCard.swift */,
 				5196170A29BA378F001FC728 /* BasicWeatherCard.swift */,
+				51BA0C6429BA9AAF00E6A6E3 /* UVIndexCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				5196170D29BA3CFC001FC728 /* PressureCard.swift in Sources */,
 				519616E829B7AB14001FC728 /* LocationManager.swift in Sources */,
 				5140F17D29B76681003B2A97 /* iSunnyApp.swift in Sources */,
+				51BA0C6529BA9AAF00E6A6E3 /* UVIndexCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

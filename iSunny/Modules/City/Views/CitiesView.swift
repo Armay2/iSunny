@@ -44,9 +44,8 @@ import SwiftUI
 struct CitiesView: View {
 //    @State private var cities = City.exemples
     @State private var isPresentedAddCityView = false
-    
     @StateObject var citiesVM = CitiesViewModel()
-    
+
     var body: some View {
         NavigationStack {
             List($citiesVM.cities, id: \.self, editActions: .delete) { $city in
@@ -73,11 +72,12 @@ struct CitiesView: View {
                     citiesVM.addNewCity(city)
                 }
             }
+            .navigationTitle("Cities")
         }
     }
     
     func delete(at offsets: IndexSet) {
-        // delete the objects here
+        citiesVM.deleteCity(at: offsets)
     }
 
 }

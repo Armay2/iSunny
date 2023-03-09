@@ -16,8 +16,8 @@ struct HourlyCard: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 5) {
                     ForEach(hourlyForcast, id: \.self) { forcast in
-                        VStack(alignment: .center, spacing: 5) {
-                            Text(dataToCorrectDate(for: forcast.dt ?? 1))
+                        VStack(alignment: .center, spacing: 10) {
+                            Text(dataToCorrectDate(for: forcast.dt ?? 1)).font(.footnote)
                             AsyncImage(url: URL(string: "https://openweathermap.org/img/wn/\(forcast.weather?[0].icon ?? "")@2x.png")) { image in
                                 image
                                     .resizable()
@@ -27,7 +27,7 @@ struct HourlyCard: View {
                                     .frame(width: 40, height: 40)
                                     .redacted(reason: .placeholder)
                             }
-                            Text(String(format: "%.0f °C", forcast.temp?.rounded(.toNearestOrAwayFromZero) ?? 42.42))
+                            Text(String(format: "%.0f°", forcast.temp?.rounded(.toNearestOrAwayFromZero) ?? 42.42))
                         }
                     }
                 }

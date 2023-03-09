@@ -9,6 +9,7 @@ import Foundation
 
 struct NetworkManager {
     var environment: AppEnvironment
+    static let APIKey = ""
     
     func fetch<T>(_ resource: Endpoint<T>, with data: Data? = nil) async throws -> T {
         guard let url = URL(string: resource.path, relativeTo: environment.baseURL) else  {

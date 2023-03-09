@@ -21,7 +21,7 @@ extension Endpoint where T == Weather {
         let queryItems = [
             URLQueryItem(name: "lat", value: String(latitude)),
             URLQueryItem(name: "lon", value: String(longitude)),
-            URLQueryItem(name: "APPID", value: "9d967652e9f971862025fbadb2dd3854"),
+            URLQueryItem(name: "APPID", value: NetworkManager.APIKey),
             URLQueryItem(name: "units", value: "metric")
         ]
         return Endpoint(path: path, type: Weather.self, queryItems: queryItems)
