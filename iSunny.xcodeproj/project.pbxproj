@@ -29,6 +29,8 @@
 		5196170929BA279D001FC728 /* WeatherCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196170829BA279D001FC728 /* WeatherCode.swift */; };
 		5196170B29BA378F001FC728 /* BasicWeatherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196170A29BA378F001FC728 /* BasicWeatherCard.swift */; };
 		5196170D29BA3CFC001FC728 /* PressureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196170C29BA3CFC001FC728 /* PressureCard.swift */; };
+		5196170F29BA84F8001FC728 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196170E29BA84F8001FC728 /* NetworkManagerTests.swift */; };
+		5196171129BA8674001FC728 /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5196171029BA8674001FC728 /* LocationManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		5196170829BA279D001FC728 /* WeatherCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCode.swift; sourceTree = "<group>"; };
 		5196170A29BA378F001FC728 /* BasicWeatherCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicWeatherCard.swift; sourceTree = "<group>"; };
 		5196170C29BA3CFC001FC728 /* PressureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureCard.swift; sourceTree = "<group>"; };
+		5196170E29BA84F8001FC728 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		5196171029BA8674001FC728 /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				5140F18E29B76683003B2A97 /* iSunnyTests.swift */,
+				5196170E29BA84F8001FC728 /* NetworkManagerTests.swift */,
+				5196171029BA8674001FC728 /* LocationManagerTests.swift */,
 			);
 			path = iSunnyTests;
 			sourceTree = "<group>";
@@ -402,6 +408,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5196171129BA8674001FC728 /* LocationManagerTests.swift in Sources */,
+				5196170F29BA84F8001FC728 /* NetworkManagerTests.swift in Sources */,
 				5140F18F29B76683003B2A97 /* iSunnyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

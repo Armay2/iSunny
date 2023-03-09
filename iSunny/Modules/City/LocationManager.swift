@@ -22,7 +22,6 @@ class LocationManager: NSObject, ObservableObject {
     private let geocoder = CLGeocoder()
 
     @Published var searchResults: [MKLocalSearchCompletion] = []
-//    @Published var selectedLocation: CLLocation?
     @Published var selectedCity: City?
     @Published private(set) var status: LocationStatus = .idle
     
@@ -43,8 +42,8 @@ class LocationManager: NSObject, ObservableObject {
     func geocodeAndSetLocation(for placemarkTitle: String) {
         geocoder.geocodeAddressString(placemarkTitle) { placemarks, error in
             if let placemark = placemarks?.first {
-//                self.selectedLocation = placemark.location
-                self.selectedCity = City(name: placemarkTitle, latidude:  placemark.location?.coordinate.latitude, longitude: placemark.location?.coordinate.longitude)
+                self.selectedCity = City(name: placemarkTitle, latitude: placemark.location?.coordinate.latitude, longitude: placemark.location?.coordinate.longitude)
+                self.status = .result
             } else {
                 self.status = .error("get location from address")
             }

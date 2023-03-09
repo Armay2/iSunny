@@ -67,7 +67,7 @@ struct CityDetailsView: View {
         }.background(.blue)
             .task {
                 do {
-                    guard let lat = city.latidude, let long = city.longitude else {
+                    guard let lat = city.latitude, let long = city.longitude else {
                         print("No city coordonate")
                         return
                     }
