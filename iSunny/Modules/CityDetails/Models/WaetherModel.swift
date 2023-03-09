@@ -56,7 +56,7 @@ struct Alert: Decodable, Hashable {
 }
 
 // MARK: - Current
-struct Current: Decodable {
+struct Current: Decodable, Hashable {
     let dt: Int?
     let sunrise: Int?
     let sunset: Int?
@@ -97,7 +97,7 @@ struct Current: Decodable {
 }
 
 // MARK: - Rain
-struct Rain: Decodable {
+struct Rain: Decodable, Hashable {
     let the1H: Double?
 
     enum CodingKeys: String, CodingKey {
@@ -106,7 +106,7 @@ struct Rain: Decodable {
 }
 
 // MARK: - WeatherElement
-struct WeatherElement: Decodable {
+struct WeatherElement: Decodable, Hashable {
     let id: Int?
     let main: String? //TODO: Enum
     let weatherDescription: String? //TODO: Enum

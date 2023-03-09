@@ -17,7 +17,7 @@ struct CitiesView: View {
                 NavigationLink(city.name, value: city)
             }
             .navigationDestination(for: City.self) { city in
-                CityDetailView(city: city)
+                CityDetailsView(city: city)
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -47,7 +47,7 @@ struct CitiesView: View {
     }
 }
 
-struct MainView_Previews: PreviewProvider {
+struct CitiesView_Previews: PreviewProvider {
     static var previews: some View {
         CitiesView()
     }
