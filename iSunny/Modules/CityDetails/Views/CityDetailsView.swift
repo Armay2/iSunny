@@ -67,10 +67,11 @@ struct CityDetailsView: View {
         }.background(.blue)
             .task {
                 do {
-                    guard let lat = city.location?.coordinate.latitude, let long = city.location?.coordinate.longitude else {
+                    guard let lat = city.latidude, let long = city.longitude else {
                         print("No city coordonate")
                         return
                     }
+
                     weather = try await networkManager.fetch(.weather(latitude: lat, longitude: long))
                 } catch let error {
                     print("error handling here: \(error.localizedDescription)")

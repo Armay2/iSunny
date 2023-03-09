@@ -44,7 +44,7 @@ class LocationManager: NSObject, ObservableObject {
         geocoder.geocodeAddressString(placemarkTitle) { placemarks, error in
             if let placemark = placemarks?.first {
 //                self.selectedLocation = placemark.location
-                self.selectedCity = City(name: placemarkTitle, location: placemark.location)
+                self.selectedCity = City(name: placemarkTitle, latidude:  placemark.location?.coordinate.latitude, longitude: placemark.location?.coordinate.longitude)
             } else {
                 self.status = .error("get location from address")
             }
