@@ -14,9 +14,11 @@ struct CitiesView: View {
     var body: some View {
         NavigationStack {
             List($cities, id: \.self, editActions: .move) { $city in
-                Text(city.name)
+                NavigationLink(city.name, value: city)
             }
-
+            .navigationDestination(for: City.self) { city in
+                CityDetailView(city: city)
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
@@ -24,7 +26,7 @@ struct CitiesView: View {
                     } label: {
                         Image(systemName: "plus")
                     }
-
+                    
                 }
             }
             .sheet(isPresented: $isPresentedAddCityView) {
@@ -36,7 +38,7 @@ struct CitiesView: View {
                     cities.append(city)
                 }
             }
-            .environment(\.editMode, Binding.constant(EditMode.active))
+//            .environment(\.editMode, Binding.constant(EditMode.active))
         }
     }
     

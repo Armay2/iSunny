@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct iSunnyApp: App {
+    @State var networkManager = NetworkManager(environment: .production)
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+            CitiesView()
+                .environment(\.networkManager, networkManager)
         }
     }
 }
