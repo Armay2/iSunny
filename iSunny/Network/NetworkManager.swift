@@ -9,7 +9,7 @@ import Foundation
 
 struct NetworkManager {
     var environment: AppEnvironment
-    static let APIKey = "9d967652e9f971862025fbadb2dd3854"
+    static let APIKey = ""
     
     /// A function that fetches data from an endpoint.
     /// - Parameters:

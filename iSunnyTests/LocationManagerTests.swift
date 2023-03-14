@@ -82,7 +82,7 @@ class LocationManagerTests: XCTestCase {
            let expectation = XCTestExpectation(description: "Error received")
            
            // when
-           locationManager.geocodeAndSetLocation(for: "asdhfgajkshdfbhlasdkflahb")
+           locationManager.geocodeAndSetLocation(for: "NotWorking-asdhfgajkshdfbhlasdkflahb")
            
            // then
            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {

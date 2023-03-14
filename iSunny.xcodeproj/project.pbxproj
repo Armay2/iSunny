@@ -70,7 +70,6 @@
 		519616E529B786AE001FC728 /* SearchCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityView.swift; sourceTree = "<group>"; };
 		519616E729B7AB14001FC728 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		519616E929B7B0B0001FC728 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
-		519616EB29B8CE17001FC728 /* FakeData.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = FakeData.geojson; sourceTree = "<group>"; };
 		519616EC29B8CFA1001FC728 /* WaetherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaetherModel.swift; sourceTree = "<group>"; };
 		519616EE29B8DEFC001FC728 /* CityDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsView.swift; sourceTree = "<group>"; };
 		519616F229BA1E59001FC728 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
@@ -142,7 +141,6 @@
 				519616F129BA1E40001FC728 /* Environment */,
 				519616F029B8F6B7001FC728 /* Network */,
 				519616FF29BA2004001FC728 /* Modules */,
-				519616EB29B8CE17001FC728 /* FakeData.geojson */,
 				5140F18029B76683003B2A97 /* Assets.xcassets */,
 				5140F18229B76683003B2A97 /* iSunny.entitlements */,
 				5140F18329B76683003B2A97 /* Preview Content */,
