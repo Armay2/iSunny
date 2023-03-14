@@ -16,9 +16,9 @@ iSunny uses OpenWeather API for weather data. To use the app, you will need to p
 
 ## Screenshots
 
-![Screenshot 1](Screenshots/screenshot1.png)
-![Screenshot 2](Screenshots/screenshot2.png)
-![Screenshot 3](Screenshots/screenshot3.png)
+![Screenshot 1](Screenshots/screenshot1.PNG)
+![Screenshot 2](Screenshots/screenshot2.PNG)
+![Screenshot 3](Screenshots/screenshot3.PNG)
 
 ## Installation
 
