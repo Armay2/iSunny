@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
-import CoreLocation
 
 struct CityDetailsView: View {
+    
+    // MARK: Properties
     @Environment(\.networkManager) var networkManager
     let city: City
     @State private var weather: Weather?
+    
+    // MARK: Constants
+    private let iconSize: CGFloat = 60
+    private let cardAspectRatio: CGFloat = 1.0
     
     var body: some View {
         ScrollView {
@@ -21,10 +26,10 @@ struct CityDetailsView: View {
                         image
                             .interpolation(.none)
                             .resizable()
-                            .frame(width: 60, height: 60)
+                            .frame(width: iconSize, height: iconSize)
                     } placeholder: {
                         RoundedRectangle(cornerRadius: 9)
-                            .frame(width: 60, height: 60)
+                            .frame(width: iconSize, height: iconSize)
                             .redacted(reason: .placeholder)
                     }
                     Text(String(format: "%.0f °C", weather?.current?.temp?.rounded(.toNearestOrAwayFromZero) ?? 42.42))
@@ -42,46 +47,34 @@ struct CityDetailsView: View {
                     }
                 }.padding()
                 
+                //MARK: Alerts Stack
                 AlertsStack(alerts: weather?.alerts ?? [])
                 
+                //MARK: Hourly Card
                 HourlyCard(hourlyForcast: weather?.hourly ?? [Current.default])
                     .redacted(reason: weather?.hourly == nil ? .placeholder : [])
                 
+                //MARK: Simple info Mosaic
                 LazyVGrid(columns: [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)], spacing: 10) {
+                    
+                    //MARK: Pressure Card
                     PressureCard(pressure: Double(weather?.current?.pressure ?? 1))
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .aspectRatio(1.0, contentMode: .fit)
                         .redacted(reason: weather?.current?.pressure == nil ? .placeholder : [])
                     
+                    //MARK: Feel Like Card
                     BasicWeatherCard(title: "Feel Like", value: String(format: "%.0f °C", weather?.current?.feelsLike?.rounded(.toNearestOrAwayFromZero) ?? 42.42), icon: "thermometer.medium", label: "Equal to human perception of weather")
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .aspectRatio(1.0, contentMode: .fit)
-                        .background(
-                            .regularMaterial,
-                            in: RoundedRectangle(cornerRadius: 8, style: .continuous)
-                        )
                         .redacted(reason: weather?.current?.feelsLike == nil ? .placeholder : [])
                     
+                    //MARK: Humidity Card
                     BasicWeatherCard(title: "Humidity", value: "\(weather?.current?.humidity ?? 0) %", icon: "humidity", label: "And the dew point is \(weather?.current?.dewPoint ?? 0) right now")
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .aspectRatio(1.0, contentMode: .fit)
-                        .background(
-                            .regularMaterial,
-                            in: RoundedRectangle(cornerRadius: 8, style: .continuous)
-                        )
                         .redacted(reason: weather?.current?.humidity == nil ? .placeholder : [])
                     
-                    
+                    //MARK: Visiblility Card
                     BasicWeatherCard(title: "Visiblility", value: "\((weather?.current?.visibility ?? 0) / 1000) km", icon: "eye.fill", label: "")
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .aspectRatio(1.0, contentMode: .fit)
-                        .background(
-                            .regularMaterial,
-                            in: RoundedRectangle(cornerRadius: 8, style: .continuous)
-                        )
                         .redacted(reason: weather?.current?.humidity == nil ? .placeholder : [])
                 }
                 
+                //MARK: UVIndex Card
                 UVIndexCard(uvi: weather?.current?.uvi ?? 4.2)
                     .redacted(reason: weather?.current?.uvi == nil ? .placeholder : [])
                 
@@ -107,6 +100,7 @@ struct CityDetailsView: View {
     }
 }
 
+#if DEBUG
 struct CityDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
@@ -114,3 +108,4 @@ struct CityDetailView_Previews: PreviewProvider {
         }
     }
 }
+#endif

@@ -7,47 +7,20 @@
 
 import SwiftUI
 
-@MainActor class CitiesViewModel: ObservableObject {
-    @Published var cities: [City]
-    static private let savingKey = "SavedCitys"
-    
-    init() {
-        if let data = UserDefaults.standard.data(forKey: CitiesViewModel.savingKey) {
-            if let decoded = try? JSONDecoder().decode([City].self, from: data) {
-                cities = decoded
-                return
-            }
-        }
-        cities = []
-    }
-    
-    func save() {
-        if let encoded = try? JSONEncoder().encode(cities) {
-            UserDefaults.standard.set(encoded, forKey: CitiesViewModel.savingKey)
-        }
-    }
-    
-    func addNewCity(_ city: City) {
-        objectWillChange.send()
-        cities.append(city)
-        self.save()
-    }
-    
-    func deleteCity(at offsets: IndexSet) {
-        objectWillChange.send()
-        cities.remove(atOffsets: offsets)
-        self.save()
-    }
-}
-
-
 struct CitiesView: View {
-//    @State private var cities = City.exemples
     @State private var isPresentedAddCityView = false
     @StateObject var citiesVM = CitiesViewModel()
 
     var body: some View {
         NavigationStack {
+            
+            if citiesVM.cities.isEmpty {
+                HStack {
+                    Text("Please add a new city")
+                    Image(systemName: "arrow.up.right")
+                }.padding()
+            }
+            
             List($citiesVM.cities, id: \.self, editActions: .delete) { $city in
                 NavigationLink(city.name, value: city)
             }
@@ -82,8 +55,12 @@ struct CitiesView: View {
 
 }
 
+#if DEBUG
 struct CitiesView_Previews: PreviewProvider {
     static var previews: some View {
         CitiesView()
     }
 }
+#endif
+
+

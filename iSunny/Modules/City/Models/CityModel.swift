@@ -14,8 +14,10 @@ struct City: Codable, Hashable {
     let longitude: Double?
     var favorite = false
     
+    #if DEBUG
     static let exemple1 = City(name: "Paris", latitude: nil, longitude: nil)
     static let exemple2 = City(name: "Tokyo", latitude: nil, longitude: nil)
     static let exemple3 = City(name: "Toulouse", latitude: 43.604, longitude: 1.44305)
     static let exemples = [exemple1, exemple2, exemple3]
+    #endif
 }

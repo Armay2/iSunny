@@ -38,8 +38,10 @@ struct SearchCityView: View {
     }
 }
 
+#if DEBUG
 struct SearchCityView_Previews: PreviewProvider {
     static var previews: some View {
         SearchCityView(onSelect: { _ in print("onSelectCity") })
     }
 }
+#endif

@@ -7,7 +7,9 @@
 //
 //import Foundation
 //import SwiftUI
-//
+
+// MARK: Not used but good idea for the futur
+
 //enum WeatherCode: Int, Codable {
 //    case thunderstormWithLightRain = 200
 //    case thunderstormWithRain = 201

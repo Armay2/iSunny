@@ -19,17 +19,17 @@ struct AlertsStack: View {
                     Text(alert.description ?? "no desc")
                 }
                 .padding()
-                .background(
-                    .regularMaterial,
-                    in: RoundedRectangle(cornerRadius: 8, style: .continuous)
-                )
             }
         }
+        .materialBackground()
     }
 }
 
+#if DEBUG
 struct AlertsStack_Previews: PreviewProvider {
     static var previews: some View {
         AlertsStack(alerts: [Alert.default])
     }
 }
+#endif
+

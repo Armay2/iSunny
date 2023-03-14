@@ -34,10 +34,7 @@ struct HourlyCard: View {
             }
         }
         .padding()
-        .background(
-            .regularMaterial,
-            in: RoundedRectangle(cornerRadius: 8, style: .continuous)
-        )
+        .materialBackground()
     }
     
     private func dataToCorrectDate(for timestamp: Int) -> String {
@@ -49,8 +46,10 @@ struct HourlyCard: View {
     }
 }
 
+#if DEBUG
 struct HourlyCard_Previews: PreviewProvider {
     static var previews: some View {
         HourlyCard(hourlyForcast: [Weather.default.current!])
     }
 }
+#endif
