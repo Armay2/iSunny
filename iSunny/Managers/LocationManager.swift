@@ -10,6 +10,8 @@ import MapKit
 import CoreLocation
 
 class LocationManager: NSObject, ObservableObject {
+    
+    /// Location Manager search status
     enum LocationStatus: Equatable {
         case idle
         case noResults
@@ -18,6 +20,7 @@ class LocationManager: NSObject, ObservableObject {
         case result
     }
     
+    // MARK: Properties
     private let searchCompleter = MKLocalSearchCompleter()
     private let geocoder = CLGeocoder()
 
@@ -25,11 +28,15 @@ class LocationManager: NSObject, ObservableObject {
     @Published var selectedCity: City?
     @Published private(set) var status: LocationStatus = .idle
     
+    // MARK: Initialization
     override init() {
         super.init()
         searchCompleter.delegate = self
     }
-
+    
+    // MARK: Methods
+    /// Initiates a search for a given search text string
+    /// - Parameter searchText: The text to search for.
     func search(for searchText: String) {
         self.status = .isSearching
         if !searchText.isEmpty {
@@ -39,6 +46,9 @@ class LocationManager: NSObject, ObservableObject {
         }
     }
 
+    
+    /// Geocodes a given placemark title and sets the selected city's location based on the geocoded results.
+    /// - Parameter placemarkTitle: <#placemarkTitle description#>
     func geocodeAndSetLocation(for placemarkTitle: String) {
         geocoder.geocodeAddressString(placemarkTitle) { placemarks, error in
             if let placemark = placemarks?.first {
@@ -51,6 +61,7 @@ class LocationManager: NSObject, ObservableObject {
     }
 }
 
+// MARK: Extension MKLocalSearchCompleterDelegate
 extension LocationManager: MKLocalSearchCompleterDelegate {
     func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) {
         searchResults = completer.results

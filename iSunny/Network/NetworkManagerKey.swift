@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+/// Manager environment default value to manage multiple environement of development
 struct NetworkManagerKey: EnvironmentKey {
     static var defaultValue = NetworkManager(environment: .production)
 }

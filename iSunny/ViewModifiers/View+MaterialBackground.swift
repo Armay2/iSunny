@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+/// ViewModifier for Weather Cards
 struct MaterialBackground: ViewModifier {
     let cornerRadius: CGFloat
     

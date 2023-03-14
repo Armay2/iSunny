@@ -12,6 +12,7 @@ struct AppEnvironment {
     var baseURL: URL
     var session: URLSession
     
+    /// Production environment Setup
     static let production = AppEnvironment (
         name: "Production", baseURL: URL(string: "https://api.openweathermap.org")!,
         session: {

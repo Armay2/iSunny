@@ -11,6 +11,13 @@ struct NetworkManager {
     var environment: AppEnvironment
     static let APIKey = "9d967652e9f971862025fbadb2dd3854"
     
+    /// A function that fetches data from an endpoint.
+    /// - Parameters:
+    ///   - resource: The endpoint to fetch data from
+    ///   - data:  Optional data to include in the request body.
+    ///   - attempts: The number of times to attempt the request before throwing an error.
+    ///   - retryDelay: The delay in seconds between each retry attempt.
+    /// - Returns:  The fetched data of type `T`
     func fetch<T>(_ resource: Endpoint<T>, with data: Data? = nil) async throws -> T {
         guard let url = URL(string: resource.path, relativeTo: environment.baseURL) else  {
             throw URLError(.unsupportedURL)
@@ -36,6 +43,13 @@ struct NetworkManager {
         return try decoder.decode(T.self, from: data)
     }
     
+    /// A function that fetches data from an endpoint, with the option to retry if the request fails.
+    /// - Parameters:
+    ///   - resource: The endpoint to fetch data from
+    ///   - data:  Optional data to include in the request body.
+    ///   - attempts: The number of times to attempt the request before throwing an error.
+    ///   - retryDelay: The delay in seconds between each retry attempt.
+    /// - Returns:  The fetched data of type `T`
     func fetch<T>(_ resource: Endpoint<T>, with data: Data? = nil, attempts: Int, retryDelay: Double = 1) async throws -> T {
         do {
             print("Attempting to fetch (Attempts remaining: \(attempts)")

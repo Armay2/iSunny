@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// HTTPMethods for API fetch
 enum HTTPMethod: String {
     case delete, get, patch, post, put
     var rawValue: String {
